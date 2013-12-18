@@ -12,7 +12,8 @@ function LittleDog:new(o)
 end
 
 function LittleDog:getSound()
-   return "The little dog has no sound"
+   -- How to call super.super method:
+   return require("Animal").getSound(self)
 end
 
 return LittleDog
