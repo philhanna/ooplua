@@ -2,19 +2,17 @@ local Dog = require("Dog") -- Import superclass
 local LittleDog = {}
 
 function LittleDog:new(o)
-   o = o or {}
+   o = Dog:new(o)
    setmetatable(self, { __index = Dog }) -- Set class metatable index to superclass
    setmetatable(o, self)   -- Set instance metatable to class
    self.__index = self
-   self:init(o)
+   o.type = "LittleDog"
+   o.sound = "Yip yip yip"
    return o
 end
 
--- Call an init method for instance variables
-function LittleDog:init(o)
-   Dog:init(o)       -- Invoke super first
-   o.type = "LittleDog"
-   o.sound = "Yip yip yip"
+function LittleDog:getSound()
+   return "The little dog has no sound"
 end
 
 return LittleDog

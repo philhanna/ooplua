@@ -4,13 +4,9 @@ function Animal:new(o)
    o = o or {}
    setmetatable(o, self)
    self.__index = self
-   self:init(o)
-   return o
-end
-
-function Animal:init(o)
    o.type = "Animal"
    o.sound = "Generic sound"
+   return o
 end
 
 function Animal:getType()
