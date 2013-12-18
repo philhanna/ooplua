@@ -22,10 +22,4 @@ print("Animal = " .. tostring(Animal), tf.tostring(Animal))
 local abby = Dog:new({name="Abby"})
 print("abby = " .. tostring(abby), tf.tostring(abby))
 print("getmetatable(abby) = " .. tostring(getmetatable(abby)), tf.tostring(getmetatable(abby)))
---test(abby)
-
-print("Animal = " .. tostring(Animal), tf.tostring(Animal))
-print("getmetatable(Animal) = " .. tostring(getmetatable(Animal)), tf.tostring(getmetatable(Animal)))
-
-print("Dog = " .. tostring(Dog), tf.tostring(Dog))
-print("getmetatable(Dog) = " .. tostring(getmetatable(Dog)), tf.tostring(getmetatable(Dog)))
+test(abby)

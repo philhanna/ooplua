@@ -1,6 +1,6 @@
-local M = {}
+local Animal = {}
 
-function M:new(o)
+function Animal:new(o)
    o = o or {}
    setmetatable(o, self)
    self.__index = self
@@ -8,21 +8,21 @@ function M:new(o)
    return o
 end
 
-function M:init(o)
+function Animal:init(o)
    o.type = "Animal"
    o.sound = "Generic sound"
 end
 
-function M:getType()
+function Animal:getType()
    return self.type
 end
 
-function M:getSound()
+function Animal:getSound()
    return self.sound
 end
 
-function M:getName()
+function Animal:getName()
    return self.name
 end
 
-return M
+return Animal
