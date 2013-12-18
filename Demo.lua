@@ -11,8 +11,6 @@ local function test(o)
    print("sound=" .. tostring(o:getSound()))
 end
 
-print("Animal = " .. tostring(Animal), tf.tostring(Animal))
-
 local abby = Dog:new({name="Abby"})
 test(abby)
 

@@ -17,10 +17,5 @@ function LittleDog:init(o)
    o.sound = "Yip yip yip"
 end
 
--- Override a method
-function LittleDog:getSound()
-   return "The little dog sound is " .. tostring(self.sound)
-end
-
 return LittleDog
 
