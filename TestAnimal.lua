@@ -11,18 +11,9 @@ local function test(o)
    print("sound=" .. tostring(o:getSound()))
 end
 
---[[
-local cow = Animal:new({name="Bossy"})
-print("cow = " .. tostring(cow), tf.tostring(cow))
-print("getmetatable(cow) = " .. tostring(getmetatable(cow)), tf.tostring(getmetatable(cow)))
-test(cow)
---]]
-
 print("Animal = " .. tostring(Animal), tf.tostring(Animal))
 
 local abby = Dog:new({name="Abby"})
--- print("abby = " .. tostring(abby), tf.tostring(abby))
--- print("getmetatable(abby) = " .. tostring(getmetatable(abby)), tf.tostring(getmetatable(abby)))
 test(abby)
 
 local eddie = LittleDog:new({name="Eddie"})
